@@ -28,8 +28,9 @@ const ContactList = ({contacts , setContacts , contact , setContact}) => {
                   ).map((contact) => (
         <div className="contactCard">
           <div className="contactCard-img">
-            <img src={`https://avatars.dicebear.com/api/personas/${contact.id}.svg`} />
+            <img src={`https://avatar.iran.liara.run/public/boy?username=${contact.id}s`} />
           </div>
+          
           <div className="contactCard-data" key={contact.id}>
             <h3>{contact.name}</h3>
             <p>{contact.phone}</p>
