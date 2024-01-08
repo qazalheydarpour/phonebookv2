@@ -6,14 +6,15 @@ import { useEffect, useState } from "react";
 import data from "./data";
 
 function App() {
-  const [contacts, setContacts] = useState([]);
-  useEffect(() => {
-    fetch("api/contacts")
-      .then((res) => res.json())
-      .then((data) => setContacts(data.contacts));
-  }, []);
+  //   const [contacts, setContacts] = useState([]);
+  //   useEffect(() => {
+  //     fetch("api/contacts")
+  //       .then((res) => res.json())
+  //       .then((data) => setContacts(data.contacts));
+  //   }, []);
 
   const [contact, setContact] = useState({ name: "", phone: "" });
+  const [contacts, setContacts] = useState(data);
   return (
     <div className="App">
       <Header />
@@ -38,5 +39,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
