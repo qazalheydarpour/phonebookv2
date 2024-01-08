@@ -41,7 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^6.1.1",
     "miragejs": "^0.1.43"
   }
 }
