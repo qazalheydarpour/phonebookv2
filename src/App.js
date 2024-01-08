@@ -17,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <p>hello hello</p>
       <div className="appBody">
         <div>
           <AddContact
